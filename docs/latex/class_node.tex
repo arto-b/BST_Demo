@@ -1,0 +1,153 @@
+\doxysection{Node Class Reference}
+\hypertarget{class_node}{}\label{class_node}\index{Node@{Node}}
+
+
+Represents a node within a binary search tree.  
+
+
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_node_a2c5fe4ecef1aa9623d740582b1425c16}{Node}} (int value)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_node}{Node} with the specified integer value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_node_adff3a518bee178e1b53cc4a945a2a9e9}{get\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Returns the stored integer value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_a9e337c1790152faf945a87207d7e1125}{set\+Value}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the stored integer value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_node_acf9cd193808bd7c00c2f3e9a61b5aff9}{get\+Left}} () const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the left child node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_a9022102d755b999dc0f6ed97142b80f2}{set\+Left}} (\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}left)
+\begin{DoxyCompactList}\small\item\em Sets the pointer to the left child node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_node_a01ffbf3e77426df8aacada5872895806}{get\+Right}} () const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the right child node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_ab93f8f7d56241bc2b978595b208604dc}{set\+Right}} (\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}right)
+\begin{DoxyCompactList}\small\item\em Sets the pointer to the right child node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a node within a binary search tree. 
+
+The \doxylink{class_node}{Node} class represents the fundamental unit of an iterative, pointer-\/based binary search tree. Each node maintains self-\/referential raw pointers to its left and right child nodes and stores a single integer data value.
+
+Encapsulation is enforced through data hiding. All data members are declared as private and may only be accessed or modified through public accessor methods. 
+
+\label{doc-constructors}
+\Hypertarget{class_node_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_node_a2c5fe4ecef1aa9623d740582b1425c16}\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily \label{class_node_a2c5fe4ecef1aa9623d740582b1425c16} 
+Node\+::\+Node (\begin{DoxyParamCaption}\item[{int}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_node}{Node} with the specified integer value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The integer value stored in the node.\\
+\hline
+\end{DoxyParams}
+Constructs a node initialized with the specified value and null child pointers. 
+
+\label{doc-func-members}
+\Hypertarget{class_node_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_node_acf9cd193808bd7c00c2f3e9a61b5aff9}\index{Node@{Node}!getLeft@{getLeft}}
+\index{getLeft@{getLeft}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getLeft()}{getLeft()}}
+{\footnotesize\ttfamily \label{class_node_acf9cd193808bd7c00c2f3e9a61b5aff9} 
+\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} Node\+::get\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns a pointer to the left child node. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the left child, or nullptr if none exists.
+\end{DoxyReturn}
+Returns a pointer to the left child, nullptr if none exists. \Hypertarget{class_node_a01ffbf3e77426df8aacada5872895806}\index{Node@{Node}!getRight@{getRight}}
+\index{getRight@{getRight}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getRight()}{getRight()}}
+{\footnotesize\ttfamily \label{class_node_a01ffbf3e77426df8aacada5872895806} 
+\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} Node\+::get\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns a pointer to the right child node. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the right child, or nullptr if none exists.
+\end{DoxyReturn}
+Returns a pointer to the right child, nullptr if none exists. \Hypertarget{class_node_adff3a518bee178e1b53cc4a945a2a9e9}\index{Node@{Node}!getValue@{getValue}}
+\index{getValue@{getValue}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_node_adff3a518bee178e1b53cc4a945a2a9e9} 
+int Node\+::get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns the stored integer value. 
+
+Returns the stored integer value. \Hypertarget{class_node_a9022102d755b999dc0f6ed97142b80f2}\index{Node@{Node}!setLeft@{setLeft}}
+\index{setLeft@{setLeft}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{setLeft()}{setLeft()}}
+{\footnotesize\ttfamily \label{class_node_a9022102d755b999dc0f6ed97142b80f2} 
+void Node\+::set\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}}]{l}{}\end{DoxyParamCaption})}
+
+
+
+Sets the pointer to the left child node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Pointer to the node to be assigned as the left child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Ownership of the node is not transferred.
+\end{DoxyNote}
+Sets the pointer to the left child. \Hypertarget{class_node_ab93f8f7d56241bc2b978595b208604dc}\index{Node@{Node}!setRight@{setRight}}
+\index{setRight@{setRight}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{setRight()}{setRight()}}
+{\footnotesize\ttfamily \label{class_node_ab93f8f7d56241bc2b978595b208604dc} 
+void Node\+::set\+Right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})}
+
+
+
+Sets the pointer to the right child node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & Pointer to the node to be assigned as the right child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Ownership of the node is not transferred.
+\end{DoxyNote}
+Sets the pointer to the right child. \Hypertarget{class_node_a9e337c1790152faf945a87207d7e1125}\index{Node@{Node}!setValue@{setValue}}
+\index{setValue@{setValue}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \label{class_node_a9e337c1790152faf945a87207d7e1125} 
+void Node\+::set\+Value (\begin{DoxyParamCaption}\item[{int}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Sets the stored integer value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The new integer value to store.\\
+\hline
+\end{DoxyParams}
+Sets the stored integer value. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_node_8h}{Node.\+h}}\item 
+\mbox{\hyperlink{_node_8cpp}{Node.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\doxysection{Stack.\+h}
+\hypertarget{_stack_8h_source}{}\label{_stack_8h_source}\mbox{\hyperlink{_stack_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#ifndef\ STACK\_H}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ STACK\_H}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stack_node_a2e48328a974410ed4de646672e5adbd4}{StackNode}}\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_node}{Node}}*\ data;}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{struct_stack_node_a2e48328a974410ed4de646672e5adbd4}{StackNode}}*\ next;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{struct_stack_node_a2e48328a974410ed4de646672e5adbd4}{StackNode}}(\mbox{\hyperlink{class_node}{Node}}*\ data)\ :\ data(data),\ next(nullptr)\ \{\}}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_stack_a14cd1cba325bead4ff0a91bc6eb0f6f5}{Stack}}\ \{}
+\DoxyCodeLine{00058\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_stack_a14cd1cba325bead4ff0a91bc6eb0f6f5}{Stack}}()\ :\ top(nullptr)\ \{\}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_stack_a40bd5dff912f0e5290777c4b46d17809}{\string~Stack}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_stack_acbd013fd18c5c62a17e4b885216eaabc}{push}}(\mbox{\hyperlink{class_node}{Node}}*\ n);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_node}{Node}}*\ \mbox{\hyperlink{class_stack_a4cb38272cdb68877b409f3969e097694}{pop}}();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_stack_a8b137edba711ed0250dccf9ecdd52971}{isEmpty}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{struct_stack_node}{StackNode}}*\ top;}
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STACK\_H}}
+
+\end{DoxyCode}

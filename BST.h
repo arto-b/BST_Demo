@@ -31,8 +31,8 @@
  * cleanup through its destructor.
  * 
  * The BST class manages dynamically allocated Node objects, forming a binary
- * search tree structure. All operations—insert, search, delete, and traversal—
- * are implemented iteratively, avoiding recursion entirely.
+ * search tree structure. All operations, including insert, search, delete, and traversal,
+ * are implemented iteratively to avoid recursion.
  *
  * The tree maintains standard BST ordering properties:
  * - Left subtree contains values less than the node.

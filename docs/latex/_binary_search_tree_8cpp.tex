@@ -1,0 +1,52 @@
+\doxysection{Binary\+Search\+Tree.\+cpp File Reference}
+\hypertarget{_binary_search_tree_8cpp}{}\label{_binary_search_tree_8cpp}\index{BinarySearchTree.cpp@{BinarySearchTree.cpp}}
+
+
+Entry point for the Binary Search Tree demonstration program.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include "{}BST.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_binary_search_tree_8cpp_a9d7e8af417b6d543da691e9c0e2f6f9f}\label{_binary_search_tree_8cpp_a9d7e8af417b6d543da691e9c0e2f6f9f} 
+void {\bfseries clear\+Screen} ()
+\item 
+\Hypertarget{_binary_search_tree_8cpp_ae9030f0b592a6dbfa159dbecd10ae0dd}\label{_binary_search_tree_8cpp_ae9030f0b592a6dbfa159dbecd10ae0dd} 
+void {\bfseries pause\+For\+User} ()
+\item 
+\Hypertarget{_binary_search_tree_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_binary_search_tree_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entry point for the Binary Search Tree demonstration program. 
+
+This file contains the main entry point for a console-\/based application that demonstrates the functionality of an iterative, pointer-\/based Binary Search Tree (\doxylink{class_b_s_t}{BST}).
+
+The \doxylink{class_b_s_t}{BST} implementation uses raw pointers and manual dynamic memory management. All allocated nodes are properly destroyed, ensuring that no memory leaks are introduced and demonstrating good fundamental coding practices.
+
+Users may insert, delete, search, and traverse integer values using a simple text-\/based menu. The program serves both as an educational example and as a usage demonstration for the \doxylink{class_b_s_t}{BST} API.
+
+Although this project includes a complete and functioning \doxylink{class_b_s_t}{BST}, its primary purpose is to showcase the author\textquotesingle{}s documentation style and technique, rather than to emphasize advanced coding features.
+
+\begin{DoxyNote}{Note}
+This application uses system("{}\+CLS"{}) to clear the console, which is specific to Windows environments.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Arto Baltayan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January 2026 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_b_s_t}{BST} 
+
+\doxylink{class_node}{Node} 
+\end{DoxySeeAlso}
