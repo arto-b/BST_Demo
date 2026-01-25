@@ -26,7 +26,7 @@ Queue::~Queue() {
 }
 
 /**
- * Adds a node to the end of the queue.
+ * Appends a node to the queue.
  */
 void Queue::enqueue(Node* n) {
     QueueNode* q = new QueueNode(n);
@@ -40,7 +40,7 @@ void Queue::enqueue(Node* n) {
 }
 
 /**
- * Removes a node from the front of the queue and returns the stored tree node pointer.
+ * Dequeues the front element and returns the associated tree node pointer.
  */
 Node* Queue::dequeue() {
     if (!front) return nullptr;
@@ -53,7 +53,7 @@ Node* Queue::dequeue() {
 }
 
 /**
- * Checks whether the queue is empty.
+ * Determines whether the queue has any elements.
  */
 bool Queue::isEmpty() const {
     return front == nullptr;

@@ -26,7 +26,7 @@ Stack::~Stack() {
 }
 
 /**
- * Pushes a new node onto the stack.
+ * Inserts a node pointer at the top of the stack.
  */
 void Stack::push(Node* n) {
     StackNode* s = new StackNode(n);
@@ -47,7 +47,7 @@ Node* Stack::pop() {
 }
 
 /**
- * Checks whether the stack is empty.
+ * Determines whether the stack has any elements.
  */
 bool Stack::isEmpty() const {
     return top == nullptr;

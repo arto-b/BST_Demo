@@ -55,7 +55,7 @@ public:
     BST();
 
     /**
-     * @brief Destroys the BST and frees all allocated nodes.
+     * @brief Destroys the BST and frees all dynamically allocated nodes.
      */
     ~BST();
 

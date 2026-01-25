@@ -20,41 +20,41 @@
 Node::Node(int v) : value(v), left(nullptr), right(nullptr) {}
 
 /**
- * Returns the stored integer value.
+ * Retrieves the node's stored integer value.
  */
 int Node::getValue() const {
 	return value;
 }
 
 /**
- * Sets the stored integer value.
+ * Assigns a new integer value to the node.
  */
 void Node::setValue(int v) { 
 	value = v;
 }
 
 /**
- * Returns a pointer to the left child, nullptr if none exists.
+ * Fetches the left child pointer; returns nullptr if there is no left child.
  */
 Node* Node::getLeft() const {
 	return left;
 }
 
 /**
- * Sets the pointer to the left child.
+ * Assigns the left child pointer.
  */
 void Node::setLeft(Node* l) {
 	left = l;
 }
 /**
- * Returns a pointer to the right child, nullptr if none exists.
+ * Fetches the right child pointer; returns nullptr if there is no right child.
  */
 Node* Node::getRight() const {
 	return right;
 }
 
 /**
- * Sets the pointer to the right child.
+ * Assigns the right child pointer.
  */
 void Node::setRight(Node* r) {
 	right = r;

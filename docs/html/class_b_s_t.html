@@ -102,7 +102,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc17123a0367c3b8ad0382eeb3ad3178" id="r_abc17123a0367c3b8ad0382eeb3ad3178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc17123a0367c3b8ad0382eeb3ad3178">BST</a> ()</td></tr>
 <tr class="memdesc:abc17123a0367c3b8ad0382eeb3ad3178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a>.  <br /></td></tr>
 <tr class="memitem:aff9c7948fbba37844d2893b920ddc238" id="r_aff9c7948fbba37844d2893b920ddc238"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff9c7948fbba37844d2893b920ddc238">~BST</a> ()</td></tr>
-<tr class="memdesc:aff9c7948fbba37844d2893b920ddc238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a> and frees all allocated nodes.  <br /></td></tr>
+<tr class="memdesc:aff9c7948fbba37844d2893b920ddc238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a> and frees all dynamically allocated nodes.  <br /></td></tr>
 <tr class="memitem:a434822ba327e37a18db6e29a9aeabb08" id="r_a434822ba327e37a18db6e29a9aeabb08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a434822ba327e37a18db6e29a9aeabb08">insert</a> (int value)</td></tr>
 <tr class="memdesc:a434822ba327e37a18db6e29a9aeabb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a value into the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a>.  <br /></td></tr>
 <tr class="memitem:afef087ca344fb21a21ac19b99e77beb1" id="r_afef087ca344fb21a21ac19b99e77beb1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afef087ca344fb21a21ac19b99e77beb1">search</a> (int value) const</td></tr>
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs an empty <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a>. </p>
-<p>Constructs an empty <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a>. </p>
+<p>Initializes the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a> root pointer to nullptr. </p>
 
 </div>
 </div>
@@ -161,8 +161,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destroys the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a> and frees all allocated nodes. </p>
-<p>Destroys the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a> and releases all dynamically allocated nodes. </p>
+<p>Destroys the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a> and frees all dynamically allocated nodes. </p>
+<p>Calls destroyTree() to deallocate all nodes in the tree. </p>
 
 </div>
 </div>
@@ -184,7 +184,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Performs an inorder traversal of the tree. </p>
 <p>Prints node values in ascending order using an iterative traversal.</p>
-<p>Performs an iterative inorder traversal.</p>
+<p>Traverses the tree in-order using an iterative approach.</p>
 <p>Uses an explicit stack to traverse the tree without recursion and prints values in ascending order. </p>
 
 </div>
@@ -233,7 +233,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs a level-order (breadth-first) traversal of the tree. </p>
-<p>Performs a level-order (breadth-first) traversal.</p>
+<p>Visits nodes level by level (breadth-first traversal).</p>
 <p>Uses a queue to visit nodes level by level starting from the root. </p>
 
 </div>
@@ -261,7 +261,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the value was found and removed; otherwise false.</dd></dl>
-<p>Removes a value from the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a> if it exists.</p>
+<p>Deletes the specified value if it exists in the <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a>.</p>
 <p>Handles all three standard <a class="el" href="class_b_s_t.html" title="Iterative binary search tree storing integer values.">BST</a> deletion cases:</p><ol type="1">
 <li><a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> is a leaf</li>
 <li><a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> has one child</li>

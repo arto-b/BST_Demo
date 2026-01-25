@@ -21,12 +21,12 @@
 #include <iostream>
 
 /**
- * Constructs an empty BST.
+ * @brief Initializes the BST root pointer to nullptr.
  */
 BST::BST() : root(nullptr) {}
 
 /**
- * Destroys the BST and releases all dynamically allocated nodes.
+ * Calls destroyTree() to deallocate all nodes in the tree.
  */
 BST::~BST() {
     destroyTree();
@@ -94,7 +94,7 @@ bool BST::search(int value) const {
 }
 
 /**
- * Performs an iterative inorder traversal.
+ * Traverses the tree in-order using an iterative approach.
  *
  * Uses an explicit stack to traverse the tree without recursion and
  * prints values in ascending order.
@@ -120,7 +120,7 @@ void BST::inorder() const {
 }
 
 /**
- * Performs a level-order (breadth-first) traversal.
+ * Visits nodes level by level (breadth-first traversal).
  *
  * Uses a queue to visit nodes level by level starting from the root.
  */
@@ -144,7 +144,7 @@ void BST::levelOrder() const {
 }
 
 /**
- * Removes a value from the BST if it exists.
+ * Deletes the specified value if it exists in the BST.
  *
  * Handles all three standard BST deletion cases:
  * 1. Node is a leaf

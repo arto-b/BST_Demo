@@ -1,5 +1,14 @@
 \doxysection{Queue\+Node Struct Reference}
 \hypertarget{struct_queue_node}{}\label{struct_queue_node}\index{QueueNode@{QueueNode}}
+
+
+Internal node type used by the \doxylink{class_queue}{Queue} class.  
+
+
+
+
+{\ttfamily \#include $<$Queue.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -15,6 +24,11 @@
 \mbox{\hyperlink{struct_queue_node}{Queue\+Node}} \texorpdfstring{$\ast$}{*} {\bfseries next}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Internal node type used by the \doxylink{class_queue}{Queue} class. 
+
+\doxylink{struct_queue_node}{Queue\+Node} stores a pointer to a tree \doxylink{class_node}{Node} and a link to the next queue node. This struct is used only to implement the queue\textquotesingle{}s internal linked list and does not assume ownership of the Node\texorpdfstring{$\ast$}{*} it stores. 
 
 \label{doc-constructors}
 \Hypertarget{struct_queue_node_doc-constructors}

@@ -43,6 +43,14 @@
  * - isEmpty(): Checks whether the stack is empty.
  */
 
+/**
+ * @brief Internal node type used by the Stack class.
+ *
+ * @details
+ * StackNode stores a pointer to a tree Node and a link to the next stack node.
+ * This struct is used only to implement the stack's internal linked list and
+ * does not assume ownership of the Node* it stores.
+ */
 struct StackNode {
     Node* data;
     StackNode* next;

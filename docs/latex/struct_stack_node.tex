@@ -1,5 +1,14 @@
 \doxysection{Stack\+Node Struct Reference}
 \hypertarget{struct_stack_node}{}\label{struct_stack_node}\index{StackNode@{StackNode}}
+
+
+Internal node type used by the \doxylink{class_stack}{Stack} class.  
+
+
+
+
+{\ttfamily \#include $<$Stack.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -15,6 +24,11 @@
 \mbox{\hyperlink{struct_stack_node}{Stack\+Node}} \texorpdfstring{$\ast$}{*} {\bfseries next}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Internal node type used by the \doxylink{class_stack}{Stack} class. 
+
+\doxylink{struct_stack_node}{Stack\+Node} stores a pointer to a tree \doxylink{class_node}{Node} and a link to the next stack node. This struct is used only to implement the stack\textquotesingle{}s internal linked list and does not assume ownership of the Node\texorpdfstring{$\ast$}{*} it stores. 
 
 \label{doc-constructors}
 \Hypertarget{struct_stack_node_doc-constructors}

@@ -91,11 +91,16 @@ $(function(){initNavTree('struct_queue_node.html','','struct_queue_node-members'
   <div class="headertitle"><div class="title">QueueNode Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Internal node type used by the <a class="el" href="class_queue.html" title="Represents an explicit queue used to support non-recursive tree operations.">Queue</a> class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_queue_8h_source.html">Queue.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b73d111a0c7499a4c0b5faf9ebadd76" id="r_a7b73d111a0c7499a4c0b5faf9ebadd76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b73d111a0c7499a4c0b5faf9ebadd76">QueueNode</a> (<a class="el" href="class_node.html">Node</a> *data)</td></tr>
-<tr class="memdesc:a7b73d111a0c7499a4c0b5faf9ebadd76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="struct_queue_node.html">QueueNode</a> with the specified node pointer.  <br /></td></tr>
+<tr class="memdesc:a7b73d111a0c7499a4c0b5faf9ebadd76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="struct_queue_node.html" title="Internal node type used by the Queue class.">QueueNode</a> with the specified node pointer.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -104,7 +109,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aec849c05b7d01b75e460b861ed72d109" id="r_aec849c05b7d01b75e460b861ed72d109"><td class="memItemLeft" align="right" valign="top"><a id="aec849c05b7d01b75e460b861ed72d109" name="aec849c05b7d01b75e460b861ed72d109"></a>
 <a class="el" href="struct_queue_node.html">QueueNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Internal node type used by the <a class="el" href="class_queue.html" title="Represents an explicit queue used to support non-recursive tree operations.">Queue</a> class. </p>
+<p><a class="el" href="struct_queue_node.html" title="Internal node type used by the Queue class.">QueueNode</a> stores a pointer to a tree <a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> and a link to the next queue node. This struct is used only to implement the queue's internal linked list and does not assume ownership of the Node* it stores. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7b73d111a0c7499a4c0b5faf9ebadd76" name="a7b73d111a0c7499a4c0b5faf9ebadd76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b73d111a0c7499a4c0b5faf9ebadd76">&#9670;&#160;</a></span>QueueNode()</h2>
 
@@ -128,7 +136,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="struct_queue_node.html">QueueNode</a> with the specified node pointer. </p>
+<p>Constructs a <a class="el" href="struct_queue_node.html" title="Internal node type used by the Queue class.">QueueNode</a> with the specified node pointer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to the <a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> stored in this queue element. </td></tr>

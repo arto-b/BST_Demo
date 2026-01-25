@@ -91,11 +91,16 @@ $(function(){initNavTree('struct_stack_node.html','','struct_stack_node-members'
   <div class="headertitle"><div class="title">StackNode Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Internal node type used by the <a class="el" href="class_stack.html" title="Represents an explicit stack used to support non-recursive tree operations.">Stack</a> class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_stack_8h_source.html">Stack.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e48328a974410ed4de646672e5adbd4" id="r_a2e48328a974410ed4de646672e5adbd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e48328a974410ed4de646672e5adbd4">StackNode</a> (<a class="el" href="class_node.html">Node</a> *data)</td></tr>
-<tr class="memdesc:a2e48328a974410ed4de646672e5adbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="struct_stack_node.html">StackNode</a> with the specified node pointer.  <br /></td></tr>
+<tr class="memdesc:a2e48328a974410ed4de646672e5adbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="struct_stack_node.html" title="Internal node type used by the Stack class.">StackNode</a> with the specified node pointer.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -104,7 +109,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a29844c489dce02fecbb6a9d5c8126aec" id="r_a29844c489dce02fecbb6a9d5c8126aec"><td class="memItemLeft" align="right" valign="top"><a id="a29844c489dce02fecbb6a9d5c8126aec" name="a29844c489dce02fecbb6a9d5c8126aec"></a>
 <a class="el" href="struct_stack_node.html">StackNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Internal node type used by the <a class="el" href="class_stack.html" title="Represents an explicit stack used to support non-recursive tree operations.">Stack</a> class. </p>
+<p><a class="el" href="struct_stack_node.html" title="Internal node type used by the Stack class.">StackNode</a> stores a pointer to a tree <a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> and a link to the next stack node. This struct is used only to implement the stack's internal linked list and does not assume ownership of the Node* it stores. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2e48328a974410ed4de646672e5adbd4" name="a2e48328a974410ed4de646672e5adbd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e48328a974410ed4de646672e5adbd4">&#9670;&#160;</a></span>StackNode()</h2>
 
@@ -128,7 +136,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="struct_stack_node.html">StackNode</a> with the specified node pointer. </p>
+<p>Constructs a <a class="el" href="struct_stack_node.html" title="Internal node type used by the Stack class.">StackNode</a> with the specified node pointer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to the <a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> stored in this stack element. </td></tr>

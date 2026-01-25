@@ -42,6 +42,14 @@
  * - isEmpty(): Checks whether the queue is empty.
  */
 
+/**
+ * @brief Internal node type used by the Queue class.
+ *
+ * @details
+ * QueueNode stores a pointer to a tree Node and a link to the next queue node.
+ * This struct is used only to implement the queue's internal linked list and
+ * does not assume ownership of the Node* it stores.
+ */
 struct QueueNode {
     Node* data;
     QueueNode* next;
