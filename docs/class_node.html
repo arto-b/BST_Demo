@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Represents a node within a binary search tree. </p>
 <p>The <a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> class represents the fundamental unit of an iterative, pointer-based binary search tree. Each node maintains self-referential raw pointers to its left and right child nodes and stores a single integer data value.</p>
 <p>Encapsulation is enforced through data hiding. All data members are declared as private and may only be accessed or modified through public accessor methods. </p>
+
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00035">35</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c5fe4ecef1aa9623d740582b1425c16" name="a2c5fe4ecef1aa9623d740582b1425c16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c5fe4ecef1aa9623d740582b1425c16">&#9670;&#160;</a></span>Node()</h2>
@@ -143,6 +145,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>Constructs a node initialized with the specified value and null child pointers. </p>
 
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00020">20</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>: value(v), left(<span class="keyword">nullptr</span>), right(<span class="keyword">nullptr</span>) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -165,6 +170,11 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the left child, or nullptr if none exists.</dd></dl>
 <p>Fetches the left child pointer; returns nullptr if there is no left child. </p>
 
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00039">39</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                          {</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> left;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a01ffbf3e77426df8aacada5872895806" name="a01ffbf3e77426df8aacada5872895806"></a>
@@ -186,6 +196,11 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the right child, or nullptr if none exists.</dd></dl>
 <p>Fetches the right child pointer; returns nullptr if there is no right child. </p>
 
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00052">52</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                           {</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> right;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adff3a518bee178e1b53cc4a945a2a9e9" name="adff3a518bee178e1b53cc4a945a2a9e9"></a>
@@ -206,6 +221,11 @@ Public Member Functions</h2></td></tr>
 <p>Returns the stored integer value. </p>
 <p>Retrieves the node's stored integer value. </p>
 
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00025">25</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                         {</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">return</span> value;</div>
+<div class="line"><span class="lineno">   27</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9022102d755b999dc0f6ed97142b80f2" name="a9022102d755b999dc0f6ed97142b80f2"></a>
@@ -233,6 +253,11 @@ Public Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Ownership of the node is not transferred.</dd></dl>
 <p>Assigns the left child pointer. </p>
 
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00046">46</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                          {</div>
+<div class="line"><span class="lineno">   47</span>    left = l;</div>
+<div class="line"><span class="lineno">   48</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab93f8f7d56241bc2b978595b208604dc" name="ab93f8f7d56241bc2b978595b208604dc"></a>
@@ -260,6 +285,11 @@ Public Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Ownership of the node is not transferred.</dd></dl>
 <p>Assigns the right child pointer. </p>
 
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00059">59</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                           {</div>
+<div class="line"><span class="lineno">   60</span>    right = r;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9e337c1790152faf945a87207d7e1125" name="a9e337c1790152faf945a87207d7e1125"></a>
@@ -286,11 +316,16 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>Assigns a new integer value to the node. </p>
 
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00032">32</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                         { </div>
+<div class="line"><span class="lineno">   33</span>    value = v;</div>
+<div class="line"><span class="lineno">   34</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_node_8h_source.html">Node.h</a></li>
-<li><a class="el" href="_node_8cpp.html">Node.cpp</a></li>
+<li><a class="el" href="_node_8cpp_source.html">Node.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

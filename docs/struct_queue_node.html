@@ -104,14 +104,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a48312c1a516de40a64d333c648982179" id="r_a48312c1a516de40a64d333c648982179"><td class="memItemLeft" align="right" valign="top"><a id="a48312c1a516de40a64d333c648982179" name="a48312c1a516de40a64d333c648982179"></a>
-<a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="memitem:aec849c05b7d01b75e460b861ed72d109" id="r_aec849c05b7d01b75e460b861ed72d109"><td class="memItemLeft" align="right" valign="top"><a id="aec849c05b7d01b75e460b861ed72d109" name="aec849c05b7d01b75e460b861ed72d109"></a>
-<a class="el" href="struct_queue_node.html">QueueNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+<tr class="memitem:a48312c1a516de40a64d333c648982179" id="r_a48312c1a516de40a64d333c648982179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48312c1a516de40a64d333c648982179">data</a></td></tr>
+<tr class="memitem:aec849c05b7d01b75e460b861ed72d109" id="r_aec849c05b7d01b75e460b861ed72d109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_queue_node.html">QueueNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec849c05b7d01b75e460b861ed72d109">next</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal node type used by the <a class="el" href="class_queue.html" title="Represents an explicit queue used to support non-recursive tree operations.">Queue</a> class. </p>
 <p><a class="el" href="struct_queue_node.html" title="Internal node type used by the Queue class.">QueueNode</a> stores a pointer to a tree <a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> and a link to the next queue node. This struct is used only to implement the queue's internal linked list and does not assume ownership of the Node* it stores. </p>
+
+<p class="definition">Definition at line <a class="el" href="_queue_8h_source.html#l00053">53</a> of file <a class="el" href="_queue_8h_source.html">Queue.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7b73d111a0c7499a4c0b5faf9ebadd76" name="a7b73d111a0c7499a4c0b5faf9ebadd76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b73d111a0c7499a4c0b5faf9ebadd76">&#9670;&#160;</a></span>QueueNode()</h2>
@@ -143,6 +143,42 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_queue_8h_source.html#l00061">61</a> of file <a class="el" href="_queue_8h_source.html">Queue.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>: data(data), next(<span class="keyword">nullptr</span>) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a48312c1a516de40a64d333c648982179" name="a48312c1a516de40a64d333c648982179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48312c1a516de40a64d333c648982179">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_node.html">Node</a>* QueueNode::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_queue_8h_source.html#l00054">54</a> of file <a class="el" href="_queue_8h_source.html">Queue.h</a>.</p>
+
+</div>
+</div>
+<a id="aec849c05b7d01b75e460b861ed72d109" name="aec849c05b7d01b75e460b861ed72d109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec849c05b7d01b75e460b861ed72d109">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_queue_node.html">QueueNode</a>* QueueNode::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_queue_8h_source.html#l00055">55</a> of file <a class="el" href="_queue_8h_source.html">Queue.h</a>.</p>
 
 </div>
 </div>

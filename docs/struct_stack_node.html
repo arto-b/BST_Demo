@@ -104,14 +104,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2a9ce80b7400c313441f888a445f8fd3" id="r_a2a9ce80b7400c313441f888a445f8fd3"><td class="memItemLeft" align="right" valign="top"><a id="a2a9ce80b7400c313441f888a445f8fd3" name="a2a9ce80b7400c313441f888a445f8fd3"></a>
-<a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="memitem:a29844c489dce02fecbb6a9d5c8126aec" id="r_a29844c489dce02fecbb6a9d5c8126aec"><td class="memItemLeft" align="right" valign="top"><a id="a29844c489dce02fecbb6a9d5c8126aec" name="a29844c489dce02fecbb6a9d5c8126aec"></a>
-<a class="el" href="struct_stack_node.html">StackNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+<tr class="memitem:a2a9ce80b7400c313441f888a445f8fd3" id="r_a2a9ce80b7400c313441f888a445f8fd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a9ce80b7400c313441f888a445f8fd3">data</a></td></tr>
+<tr class="memitem:a29844c489dce02fecbb6a9d5c8126aec" id="r_a29844c489dce02fecbb6a9d5c8126aec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stack_node.html">StackNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29844c489dce02fecbb6a9d5c8126aec">next</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal node type used by the <a class="el" href="class_stack.html" title="Represents an explicit stack used to support non-recursive tree operations.">Stack</a> class. </p>
 <p><a class="el" href="struct_stack_node.html" title="Internal node type used by the Stack class.">StackNode</a> stores a pointer to a tree <a class="el" href="class_node.html" title="Represents a node within a binary search tree.">Node</a> and a link to the next stack node. This struct is used only to implement the stack's internal linked list and does not assume ownership of the Node* it stores. </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_8h_source.html#l00054">54</a> of file <a class="el" href="_stack_8h_source.html">Stack.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2e48328a974410ed4de646672e5adbd4" name="a2e48328a974410ed4de646672e5adbd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e48328a974410ed4de646672e5adbd4">&#9670;&#160;</a></span>StackNode()</h2>
@@ -143,6 +143,42 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_stack_8h_source.html#l00062">62</a> of file <a class="el" href="_stack_8h_source.html">Stack.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>: data(data), next(<span class="keyword">nullptr</span>) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a2a9ce80b7400c313441f888a445f8fd3" name="a2a9ce80b7400c313441f888a445f8fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9ce80b7400c313441f888a445f8fd3">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_node.html">Node</a>* StackNode::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stack_8h_source.html#l00055">55</a> of file <a class="el" href="_stack_8h_source.html">Stack.h</a>.</p>
+
+</div>
+</div>
+<a id="a29844c489dce02fecbb6a9d5c8126aec" name="a29844c489dce02fecbb6a9d5c8126aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29844c489dce02fecbb6a9d5c8126aec">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_stack_node.html">StackNode</a>* StackNode::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stack_8h_source.html#l00056">56</a> of file <a class="el" href="_stack_8h_source.html">Stack.h</a>.</p>
 
 </div>
 </div>

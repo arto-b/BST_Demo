@@ -119,6 +119,8 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="#a28bf9fa77064ed2b63955156b17ef614" title="Removes and returns the node at the front of the queue.">dequeue()</a>: Removes and returns a node pointer from the front of the queue.</li>
 <li><a class="el" href="#a7614672eed4a720bf0d78d94002bd022" title="Checks whether the queue is empty.">isEmpty()</a>: Checks whether the queue is empty. </li>
 </ul>
+
+<p class="definition">Definition at line <a class="el" href="_queue_8h_source.html#l00064">64</a> of file <a class="el" href="_queue_8h_source.html">Queue.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7cfca3637d57c4a9e37351b3426ffd40" name="a7cfca3637d57c4a9e37351b3426ffd40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cfca3637d57c4a9e37351b3426ffd40">&#9670;&#160;</a></span>Queue()</h2>
@@ -146,6 +148,9 @@ Public Member Functions</h2></td></tr>
 <p>Constructs an empty queue. </p>
 <dl class="section note"><dt>Note</dt><dd>Initializes the queue with its front and rear pointers set to nullptr. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_queue_8h_source.html#l00070">70</a> of file <a class="el" href="_queue_8h_source.html">Queue.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>: front(<span class="keyword">nullptr</span>), rear(<span class="keyword">nullptr</span>) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a00d119db8fa3050da37746e82cbcf94f" name="a00d119db8fa3050da37746e82cbcf94f"></a>
@@ -166,6 +171,16 @@ Public Member Functions</h2></td></tr>
 <p>Destroys the <a class="el" href="class_queue.html" title="Represents an explicit queue used to support non-recursive tree operations.">Queue</a>. </p>
 <p>Destroys the queue by removing all remaining nodes. </p>
 
+<p class="definition">Definition at line <a class="el" href="_queue_8cpp_source.html#l00021">21</a> of file <a class="el" href="_queue_8cpp_source.html">Queue.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>              {</div>
+<div class="line"><span class="lineno">   22</span>    <span class="comment">// Remove all nodes from front to rear.</span></div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">while</span> (!<a class="code hl_function" href="#a7614672eed4a720bf0d78d94002bd022">isEmpty</a>()) {</div>
+<div class="line"><span class="lineno">   24</span>        <a class="code hl_function" href="#a28bf9fa77064ed2b63955156b17ef614">dequeue</a>();</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="line"><span class="lineno">   26</span>}</div>
+<div class="ttc" id="aclass_queue_html_a28bf9fa77064ed2b63955156b17ef614"><div class="ttname"><a href="#a28bf9fa77064ed2b63955156b17ef614">Queue::dequeue</a></div><div class="ttdeci">Node * dequeue()</div><div class="ttdoc">Removes and returns the node at the front of the queue.</div><div class="ttdef"><b>Definition</b> <a href="_queue_8cpp_source.html#l00045">Queue.cpp:45</a></div></div>
+<div class="ttc" id="aclass_queue_html_a7614672eed4a720bf0d78d94002bd022"><div class="ttname"><a href="#a7614672eed4a720bf0d78d94002bd022">Queue::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdoc">Checks whether the queue is empty.</div><div class="ttdef"><b>Definition</b> <a href="_queue_8cpp_source.html#l00058">Queue.cpp:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -188,6 +203,17 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the node removed from the queue.</dd></dl>
 <p>Dequeues the front element and returns the associated tree node pointer. </p>
 
+<p class="definition">Definition at line <a class="el" href="_queue_8cpp_source.html#l00045">45</a> of file <a class="el" href="_queue_8cpp_source.html">Queue.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                     {</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (!front) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   47</span>    QueueNode* temp = front;</div>
+<div class="line"><span class="lineno">   48</span>    Node* result = temp-&gt;data;</div>
+<div class="line"><span class="lineno">   49</span>    front = front-&gt;next;</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (!front) rear = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keyword">delete</span> temp;</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   53</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3d4470f88b853a985126d448a2bc747f" name="a3d4470f88b853a985126d448a2bc747f"></a>
@@ -214,6 +240,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>Appends a node to the queue. </p>
 
+<p class="definition">Definition at line <a class="el" href="_queue_8cpp_source.html#l00031">31</a> of file <a class="el" href="_queue_8cpp_source.html">Queue.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                           {</div>
+<div class="line"><span class="lineno">   32</span>    QueueNode* q = <span class="keyword">new</span> QueueNode(n);</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (!rear) {</div>
+<div class="line"><span class="lineno">   34</span>        front = rear = q;</div>
+<div class="line"><span class="lineno">   35</span>    }</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   37</span>        rear-&gt;next = q;</div>
+<div class="line"><span class="lineno">   38</span>        rear = q;</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="line"><span class="lineno">   40</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7614672eed4a720bf0d78d94002bd022" name="a7614672eed4a720bf0d78d94002bd022"></a>
@@ -235,11 +273,16 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if the queue contains no elements.</dd></dl>
 <p>Determines whether the queue has any elements. </p>
 
+<p class="definition">Definition at line <a class="el" href="_queue_8cpp_source.html#l00058">58</a> of file <a class="el" href="_queue_8cpp_source.html">Queue.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                          {</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> front == <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_queue_8h_source.html">Queue.h</a></li>
-<li><a class="el" href="_queue_8cpp.html">Queue.cpp</a></li>
+<li><a class="el" href="_queue_8cpp_source.html">Queue.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

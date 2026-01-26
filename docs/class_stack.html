@@ -119,6 +119,8 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="#a4cb38272cdb68877b409f3969e097694" title="Removes and returns the node at the top of the stack.">pop()</a>: Removes and returns the top node pointer.</li>
 <li><a class="el" href="#a8b137edba711ed0250dccf9ecdd52971" title="Checks whether the stack is empty.">isEmpty()</a>: Checks whether the stack is empty. </li>
 </ul>
+
+<p class="definition">Definition at line <a class="el" href="_stack_8h_source.html#l00065">65</a> of file <a class="el" href="_stack_8h_source.html">Stack.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a14cd1cba325bead4ff0a91bc6eb0f6f5" name="a14cd1cba325bead4ff0a91bc6eb0f6f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14cd1cba325bead4ff0a91bc6eb0f6f5">&#9670;&#160;</a></span>Stack()</h2>
@@ -146,6 +148,9 @@ Public Member Functions</h2></td></tr>
 <p>Constructs an empty <a class="el" href="class_stack.html" title="Represents an explicit stack used to support non-recursive tree operations.">Stack</a>. </p>
 <dl class="section note"><dt>Note</dt><dd>Initializes the stack with its top pointer set to nullptr. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_stack_8h_source.html#l00071">71</a> of file <a class="el" href="_stack_8h_source.html">Stack.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>: top(<span class="keyword">nullptr</span>) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a40bd5dff912f0e5290777c4b46d17809" name="a40bd5dff912f0e5290777c4b46d17809"></a>
@@ -166,6 +171,16 @@ Public Member Functions</h2></td></tr>
 <p>Destroys the <a class="el" href="class_stack.html" title="Represents an explicit stack used to support non-recursive tree operations.">Stack</a>. </p>
 <p>Destroys the stack by removing all remaining nodes. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stack_8cpp_source.html#l00021">21</a> of file <a class="el" href="_stack_8cpp_source.html">Stack.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>              {</div>
+<div class="line"><span class="lineno">   22</span>    <span class="comment">// Remove all nodes from top to bottom.</span></div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">while</span> (!<a class="code hl_function" href="#a8b137edba711ed0250dccf9ecdd52971">isEmpty</a>()) {</div>
+<div class="line"><span class="lineno">   24</span>        <a class="code hl_function" href="#a4cb38272cdb68877b409f3969e097694">pop</a>();</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="line"><span class="lineno">   26</span>}</div>
+<div class="ttc" id="aclass_stack_html_a4cb38272cdb68877b409f3969e097694"><div class="ttname"><a href="#a4cb38272cdb68877b409f3969e097694">Stack::pop</a></div><div class="ttdeci">Node * pop()</div><div class="ttdoc">Removes and returns the node at the top of the stack.</div><div class="ttdef"><b>Definition</b> <a href="_stack_8cpp_source.html#l00040">Stack.cpp:40</a></div></div>
+<div class="ttc" id="aclass_stack_html_a8b137edba711ed0250dccf9ecdd52971"><div class="ttname"><a href="#a8b137edba711ed0250dccf9ecdd52971">Stack::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdoc">Checks whether the stack is empty.</div><div class="ttdef"><b>Definition</b> <a href="_stack_8cpp_source.html#l00052">Stack.cpp:52</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -188,6 +203,11 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if the stack contains no elements.</dd></dl>
 <p>Determines whether the stack has any elements. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stack_8cpp_source.html#l00052">52</a> of file <a class="el" href="_stack_8cpp_source.html">Stack.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                          {</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> top == <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4cb38272cdb68877b409f3969e097694" name="a4cb38272cdb68877b409f3969e097694"></a>
@@ -209,6 +229,16 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the node removed from the stack.</dd></dl>
 <p>Pops a node off the stack and returns the stored tree node pointer. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stack_8cpp_source.html#l00040">40</a> of file <a class="el" href="_stack_8cpp_source.html">Stack.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                 {</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (!top) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   42</span>    StackNode* temp = top;</div>
+<div class="line"><span class="lineno">   43</span>    Node* result = temp-&gt;data;</div>
+<div class="line"><span class="lineno">   44</span>    top = top-&gt;next;</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keyword">delete</span> temp;</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   47</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acbd013fd18c5c62a17e4b885216eaabc" name="acbd013fd18c5c62a17e4b885216eaabc"></a>
@@ -235,11 +265,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>Inserts a node pointer at the top of the stack. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stack_8cpp_source.html#l00031">31</a> of file <a class="el" href="_stack_8cpp_source.html">Stack.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                        {</div>
+<div class="line"><span class="lineno">   32</span>    StackNode* s = <span class="keyword">new</span> StackNode(n);</div>
+<div class="line"><span class="lineno">   33</span>    s-&gt;next = top;</div>
+<div class="line"><span class="lineno">   34</span>    top = s;</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_stack_8h_source.html">Stack.h</a></li>
-<li><a class="el" href="_stack_8cpp.html">Stack.cpp</a></li>
+<li><a class="el" href="_stack_8cpp_source.html">Stack.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
