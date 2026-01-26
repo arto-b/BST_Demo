@@ -15,7 +15,7 @@ structures to support traversal and deletion operations.
 
 ## Documentation
 
-- **API Reference (Doxygen):** *(GitHub Pages link goes here once enabled)*
+- **API Reference (Doxygen):** *[Binary Search Tree (C++): Main Page](https://arto-b.github.io/BST_Demo/)*
 
 ## Build and Run
 
