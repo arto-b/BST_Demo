@@ -17,6 +17,8 @@ structures to support traversal and deletion operations.
 
 - **API Reference (Doxygen):** *[Binary Search Tree (C++): Main Page](https://arto-b.github.io/BST_Demo/)*
 
+**Tip:** Start with **Classes → Class List → `BST`** for the main API. Use the built-in **Search** bar to quickly find member functions.
+
 ## Build and Run
 
 This project was developed and tested using Microsoft Visual Studio.
