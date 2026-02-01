@@ -25,7 +25,7 @@ This project was developed and tested using Microsoft Visual Studio.
 
 1. Open the solution in Visual Studio.
 2. Build the solution.
-3. Run the program to view the BST demonstration output.
+3. Run the program (BinarySearchTree.cpp) to view the BST demonstration output.
 
 ## Project Structure
 
