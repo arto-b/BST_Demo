@@ -4,7 +4,7 @@ An iterative, pointer-based Binary Search Tree (BST) implementation written in C
 This project avoids recursion and STL containers by using custom Stack and Queue
 structures to support traversal and deletion operations.
 
-**Note:** This is an original portfolio project, designed and implemented by the author.
+**Note:** This is an original portfolio project — the code and documentation were written by the author.
 
 ## Key Features
 
