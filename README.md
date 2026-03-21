@@ -4,12 +4,13 @@ An iterative, pointer-based Binary Search Tree (BST) implementation written in C
 This project avoids recursion and STL containers by using custom Stack and Queue
 structures to support traversal and deletion operations.
 
-
+This project intentionally uses raw pointers instead of smart pointers to demonstrate explicit memory management and a clear understanding of dynamic allocation and deallocation in C++.
 
 ## Key Features
 
 - Iterative BST operations (no recursion)
 - Pointer-based implementation using `new` / `delete` (raw pointers)
+- Demonstrates explicit manual memory management (no smart pointers)
 - Custom supporting data structures:
   - Stack (used for traversal and tree destruction)
   - Queue (used for level-order traversal)
